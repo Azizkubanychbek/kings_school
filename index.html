@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Kings International School — международная школа в Бишкеке. Программа Cambridge от начальной школы до A Level." />
+  <title>Kings International School — Международная школа в Бишкеке</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a class="logo" href="#top">
+        <img
+          class="logo__img"
+          src="images/logo.png"
+          width="52"
+          height="52"
+          alt="Kings International School"
+          loading="eager"
+          decoding="async"
+          data-logo-img
+        />
+        <span class="logo__fallback" data-logo-fallback hidden>Kings</span>
+      </a>
+      <div class="header__end">
+        <nav class="nav" aria-label="Основное меню" data-i18n-aria-label="nav_main">
+          <ul class="nav__list">
+            <li><a href="#about" data-i18n="nav_about">О школе</a></li>
+            <li><a href="#graduates" data-i18n="nav_grad">Выпускники</a></li>
+            <li><a href="#programs" data-i18n="nav_prog">Образование</a></li>
+            <li><a href="#extras" data-i18n="nav_ex">Факультативы</a></li>
+            <li><a href="#admission" data-i18n="nav_adm">Поступление</a></li>
+            <li><a href="#faq" data-i18n="nav_faq">Вопросы</a></li>
+            <li><a href="#contacts" data-i18n="nav_cont">Контакты</a></li>
+          </ul>
+          <a class="btn btn--small btn--header" href="tel:+996706577777" data-i18n="nav_call">Позвонить</a>
+        </nav>
+        <div class="lang" data-lang-root>
+          <button
+            type="button"
+            class="lang__btn"
+            data-lang-toggle
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            data-i18n-aria-label="lang_choose"
+          >
+            <span data-lang-current>РУС</span>
+          </button>
+          <ul class="lang__list" data-lang-list role="listbox" data-i18n-aria-label="lang_choose" aria-hidden="true">
+            <li role="none"><button type="button" role="option" data-lang-set="ru" class="lang__opt">РУС</button></li>
+            <li role="none"><button type="button" role="option" data-lang-set="en" class="lang__opt">ENG</button></li>
+            <li role="none"><button type="button" role="option" data-lang-set="ky" class="lang__opt">КЫРГ</button></li>
+          </ul>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-i18n-aria-label="nav_open" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Главный экран" data-i18n-aria-label="hero_aria">
+      <div class="hero__media" aria-hidden="true">
+        <div class="hero__video-wrap">
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-hidden="true"
+          >
+            <source src="images/Showreel%20for%20School%20Promotional%20Videos.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow" data-i18n="hero_eyebrow">Международное образование в Бишкеке</p>
+        <h1 class="hero__title" data-i18n-html="hero_title_html">Вдохновляем детей. <em>Строим будущее.</em></h1>
+        <p class="hero__lead" data-i18n="hero_lead">
+          Kings International School — частная международная школа с программой Cambridge: от младших классов до IGCSE и A Level. Здесь учатся с интересом, играют в команде и растут в атмосфере доверия и поддержки.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#admission" data-i18n="hero_btn1">Запросить консультацию</a>
+          <a class="btn btn--ghost btn--hero-ghost" href="#programs" data-i18n="hero_btn2">Учебные программы</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="container stats__grid">
+        <div class="stat">
+          <span class="stat__num">Cambridge</span>
+          <span class="stat__label" data-i18n="stat_l1">академическая программа</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">1,5–18</span>
+          <span class="stat__label" data-i18n="stat_l2">лет — полный образовательный цикл</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">Бишкек</span>
+          <span class="stat__label" data-i18n="stat_l3">современная инфраструктура</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-i18n="stat_num4">Ценности</span>
+          <span class="stat__label" data-i18n="stat_l4">наука, творчество, нравственность</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="about_title">О школе Kings</h2>
+          <p class="section__subtitle" data-i18n="about_sub">
+            Мы создаём среду, где сочетаются высокие академические стандарты Cambridge, забота о каждом ребёнке и воспитание ответственных лидеров завтрашнего дня.
+          </p>
+        </div>
+        <div class="about__grid">
+          <div class="about__card">
+            <h3 data-i18n="ab_m_t">Наша миссия</h3>
+            <p data-i18n="ab_m_p">Помогать каждому ученику раскрыть таланты, думать критически и с достоинством идти к своей цели — с уважением к себе, людям и миру.</p>
+          </div>
+          <div class="about__card">
+            <h3 data-i18n="ab_v_t">Наше видение</h3>
+            <p data-i18n="ab_v_p">Школа, где наука, технологии, творчество и моральные ценности формируют уверенных, эмпатичных граждан с глобальным мышлением.</p>
+          </div>
+          <div class="about__card">
+            <h3 data-i18n="ab_a_t">Подход</h3>
+            <p data-i18n="ab_a_p">Современные методы обучения, международная программа и внимание к личности: академический прогресс и гармоничное развитие идут рука об руку.</p>
+          </div>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar__icon" aria-hidden="true">◎</span>
+            <strong data-i18n="pil1_t">Академическая честность</strong>
+            <p data-i18n="pil1_p">Учим работать самостоятельно и ответственно относиться к знаниям.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon" aria-hidden="true">◇</span>
+            <strong data-i18n="pil2_t">Критическое мышление</strong>
+            <p data-i18n="pil2_p">Развиваем умение анализировать, спрашивать «почему» и принимать взвешенные решения.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon" aria-hidden="true">✦</span>
+            <strong data-i18n="pil3_t">Лидерство и забота</strong>
+            <p data-i18n="pil3_p">Воспитываем уверенность, сопереживание и готовность вносить вклад в общество.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section graduates" id="graduates" aria-labelledby="graduates-title">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow" data-i18n="grad_eyebrow">Истории выпускников</p>
+          <h2 class="section__title" id="graduates-title" data-i18n="grad_title">Куда ведёт дорога после Kings</h2>
+          <p class="section__subtitle" data-i18n="grad_sub">
+            Наши выпускники учатся в разных странах и выбирают смелые профессии. Листайте истории — каждая из них про рост, поддержку школы и собственный путь.
+          </p>
+        </div>
+
+        <div class="grad-slider" data-grad-slider>
+          <div class="grad-slider__viewport">
+            <article class="grad-slide is-active" data-grad-slide>
+              <div class="grad-slide__text">
+                <span class="grad-slide__quote" aria-hidden="true">“</span>
+                <blockquote class="grad-slide__body">
+                  <p data-i18n="grad1_q">
+                    В Kings меня научили не бояться сложных предметов и честно работать над ошибками. Cambridge и поддержка учителей помогли спокойно подготовиться к поступлению и чувствовать себя уверенно на экзаменах.
+                  </p>
+                </blockquote>
+                <footer class="grad-slide__meta">
+                  <strong data-i18n="grad1_name">Айгерим К.</strong>
+                  <span data-i18n="grad1_n1">Выпуск 2023 · Natural Sciences</span>
+                  <span class="grad-slide__dest" data-i18n="grad1_dest">Учёба в Европе</span>
+                </footer>
+              </div>
+              <div class="grad-slide__photo">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=640&h=800&fit=crop&q=80" alt="" width="320" height="400" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="grad-slide" data-grad-slide>
+              <div class="grad-slide__text">
+                <span class="grad-slide__quote" aria-hidden="true">“</span>
+                <blockquote class="grad-slide__body">
+                  <p data-i18n="grad2_q">
+                    Я с детства любила языки и проекты. В школе было место и для олимпиад, и для творчества — поэтому выбор международного вуза оказался логичным шагом, а не стрессом.
+                  </p>
+                </blockquote>
+                <footer class="grad-slide__meta">
+                  <strong data-i18n="grad2_name">Данияр Т.</strong>
+                  <span data-i18n="grad2_n1">Выпуск 2022 · Humanities</span>
+                  <span class="grad-slide__dest" data-i18n="grad2_dest">Магистратура за рубежом</span>
+                </footer>
+              </div>
+              <div class="grad-slide__photo">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=640&h=800&fit=crop&q=80" alt="" width="320" height="400" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="grad-slide" data-grad-slide>
+              <div class="grad-slide__text">
+                <span class="grad-slide__quote" aria-hidden="true">“</span>
+                <blockquote class="grad-slide__body">
+                  <p data-i18n="grad3_q">
+                    Робототехника и математика открыли путь в IT. Самое ценное — атмосфера, где к тебе относятся серьёзно и с теплом: хочется расти и возвращаться в школу как гость.
+                  </p>
+                </blockquote>
+                <footer class="grad-slide__meta">
+                  <strong data-i18n="grad3_name">Эрмек Н.</strong>
+                  <span data-i18n="grad3_n1">Выпуск 2024 · STEM</span>
+                  <span class="grad-slide__dest" data-i18n="grad3_dest">Технологический стартап</span>
+                </footer>
+              </div>
+              <div class="grad-slide__photo">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=640&h=800&fit=crop&q=80" alt="" width="320" height="400" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="grad-slide" data-grad-slide>
+              <div class="grad-slide__text">
+                <span class="grad-slide__quote" aria-hidden="true">“</span>
+                <blockquote class="grad-slide__body">
+                  <p data-i18n="grad4_q">
+                    Для нашей семьи важно было, чтобы ребёнок и учился, и оставался ребёнком — с футболом, друзьями и нормальным ритмом. Kings совместили академию и заботу так, как мы и мечтали.
+                  </p>
+                </blockquote>
+                <footer class="grad-slide__meta">
+                  <strong data-i18n="grad4_name">Родители Алины М.</strong>
+                  <span data-i18n="grad4_n1">Выпускница 2021</span>
+                  <span class="grad-slide__dest" data-i18n="grad4_dest">Семейная история</span>
+                </footer>
+              </div>
+              <div class="grad-slide__photo">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&h=800&fit=crop&q=80" alt="" width="320" height="400" loading="lazy" />
+              </div>
+            </article>
+          </div>
+
+          <div class="grad-slider__controls">
+            <div class="grad-slider__dots" data-grad-dots role="tablist" data-i18n-aria-label="grad_dots_aria" aria-label="Выбор истории выпускника"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="prog_title">Академическая программа</h2>
+          <p class="section__subtitle" data-i18n="prog_sub">
+            Программа Cambridge признаётся по всему миру: она выстраивает последовательный путь от начальной школы к старшим классам и подготовке к университету.
+          </p>
+        </div>
+        <div class="programs">
+          <article class="program-card">
+            <span class="program-card__tag">Early Years &amp; Primary</span>
+            <h3 data-i18n="p1_t">Начальная ступень</h3>
+            <p data-i18n="p1_p">Фундамент грамотности, математики, естественных наук и языков в дружелюбной, поддерживающей среде.</p>
+            <ul>
+              <li data-i18n="p1_li1">Cambridge Primary</li>
+              <li data-i18n="p1_li2">Развитие любознательности и привычек к учёбе</li>
+            </ul>
+          </article>
+          <article class="program-card program-card--accent">
+            <span class="program-card__tag">Lower Secondary</span>
+            <h3 data-i18n="p2_t">Средняя ступень</h3>
+            <p data-i18n="p2_p">Углубление предметов, междисциплинарные связи и подготовка к IGCSE.</p>
+            <ul>
+              <li data-i18n="p2_li1">Cambridge Lower Secondary</li>
+              <li data-i18n="p2_li2">Логика, проекты, цифровая грамотность</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <span class="program-card__tag">IGCSE &amp; A Level</span>
+            <h3 data-i18n="p3_t">Старшая школа</h3>
+            <p data-i18n="p3_p">Международные экзамены и профильное обучение для поступления в вузы в Кыргызстане и за рубежом.</p>
+            <ul>
+              <li data-i18n="p3_li1">Cambridge IGCSE и A Level</li>
+              <li data-i18n="p3_li2">Ориентация на университеты и карьеру</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="extras">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <h2 class="section__title" data-i18n="extras_title">Факультативы и инфраструктура</h2>
+          <p class="section__subtitle" data-i18n="extras_sub">Помимо уроков — спорт, творчество и STEM: пространство для здоровья, характера и интересов ребёнка.</p>
+        </div>
+        <ul class="extras">
+          <li data-i18n="ex1">Футбол — оборудованное поле</li>
+          <li data-i18n="ex2">Плавание</li>
+          <li data-i18n="ex3">Шахматы</li>
+          <li data-i18n="ex4">Тхэквондо и дзюдо</li>
+          <li data-i18n="ex5">Большой и настольный теннис</li>
+          <li data-i18n="ex6">Робототехника</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="admission">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="adm_title">Как поступить</h2>
+          <p class="section__subtitle" data-i18n="adm_sub">Прозрачные шаги: знакомство со школой, диагностика уровня и оформление документов.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="steps__num">1</span>
+            <div>
+              <h3 data-i18n="s1_t">Консультация</h3>
+              <p data-i18n="s1_p">Свяжитесь с приёмной комиссией — ответим на вопросы о программе, расписании и свободных местах.</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">2</span>
+            <div>
+              <h3 data-i18n="s2_t">Встреча и оценка</h3>
+              <p data-i18n="s2_p">Знакомство с школой и проверка уровня подготовки по ключевым предметам (по договорённости).</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">3</span>
+            <div>
+              <h3 data-i18n="s3_t">Договор и документы</h3>
+              <p data-i18n="s3_p">Заключение договора, предоставление необходимых документов и медицинских справок.</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">4</span>
+            <div>
+              <h3 data-i18n="s4_t">Зачисление</h3>
+              <p data-i18n="s4_p">Подтверждение зачисления и начало учёбы в Kings International School.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="faq_title">Частые вопросы</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary data-i18n="faq1_q">На каком языке ведётся обучение?</summary>
+            <p data-i18n="faq1_a">Международная программа Cambridge с опорой на английский язык; детали по параллелям и поддержке русского языка уточняйте в приёмной комиссии.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq2_q">Можно ли перевестись в течение года?</summary>
+            <p data-i18n="faq2_a">Перевод возможен при наличии мест в классе. Напишите или позвоните — подскажем актуальную ситуацию.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq3_q">Есть ли продлёнка и внеклассные занятия?</summary>
+            <p data-i18n="faq3_a">Факультативы и спортивная инфраструктура помогают детям оставаться в школе весь день с пользой и безопасностью — уточняйте расписание у администрации.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner">
+        <div>
+          <h2 class="cta__title" data-i18n="cta_title">Готовы познакомиться с Kings?</h2>
+          <p class="cta__text" data-i18n="cta_text">Запишитесь на консультацию — расскажем о программе, кампусе и поступлении.</p>
+        </div>
+        <a class="btn btn--light" href="mailto:office@kings-school.kg" data-i18n="cta_btn">Написать на office@kings-school.kg</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo logo--footer" href="#top">
+          <img
+            class="logo__img logo__img--footer"
+            src="images/logo.png"
+            width="56"
+            height="56"
+            alt="Kings International School"
+            loading="lazy"
+            decoding="async"
+            data-logo-img
+          />
+          <span class="logo__fallback logo__fallback--footer" data-logo-fallback hidden>Kings</span>
+        </a>
+        <p class="footer__tagline" data-i18n="foot_tag">Международная школа в Бишкеке. Cambridge. Развитие с заботой.</p>
+      </div>
+      <div>
+        <h3 class="footer__heading" data-i18n="foot_cont">Контакты</h3>
+        <address class="footer__address">
+          ул. Алыкулова, 3<br />
+          Бишкек, Кыргызстан
+        </address>
+        <p class="footer__contact">
+          <a href="tel:+996706577777">+996 (706) 577-777</a><br />
+          <a href="mailto:office@kings-school.kg">office@kings-school.kg</a>
+        </p>
+      </div>
+      <div>
+        <h3 class="footer__heading" data-i18n="foot_nav">Навигация</h3>
+        <ul class="footer__links">
+          <li><a href="#about" data-i18n="nav_about">О школе</a></li>
+          <li><a href="#graduates" data-i18n="nav_grad">Выпускники</a></li>
+          <li><a href="#programs" data-i18n="nav_prog">Образование</a></li>
+          <li><a href="#extras" data-i18n="nav_ex">Факультативы</a></li>
+          <li><a href="#admission" data-i18n="nav_adm">Поступление</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> Kings International School. <span data-i18n="foot_copy">Все права защищены.</span></p>
+        <a href="#top" data-i18n="foot_top">Наверх</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
